@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sui Says - Retro Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Sui Says</h1>
+            <div class="pixel-decoration"></div>
+        </div>
+        
+        <p class="description">Hello World. This is fun experiment to test the Walrus Sites functionality. Leave a message, paint something, or wipe it all out!</p>
+        
+        <div class="toolbar">
+            <div class="tool-section">
+                <label for="brush-color">COLOR:</label>
+                <input type="color" id="brush-color" value="#ff00a0">
+            </div>
+            
+            <div class="tool-section">
+                <label for="brush-size">SIZE:</label>
+                <input type="range" id="brush-size" min="1" max="50" value="5">
+                <span id="size-display">5px</span>
+            </div>
+            
+            <div class="tool-section">
+                <button id="clear-canvas">CLEAR</button>
+            </div>
+            
+            <div class="tool-section">
+                <button id="save-canvas">SAVE</button>
+            </div>
+            
+            <div class="tool-section">
+                <label for="tool-select">TOOL:</label>
+                <select id="tool-select">
+                    <option value="brush">BRUSH</option>
+                    <option value="line">LINE</option>
+                    <option value="rectangle">RECT</option>
+                    <option value="circle">CIRCLE</option>
+                    <option value="eraser">ERASER</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <div class="pixel-corner top-left"></div>
+            <div class="pixel-corner top-right"></div>
+            <div class="pixel-corner bottom-left"></div>
+            <div class="pixel-corner bottom-right"></div>
+            <canvas id="paint-canvas"></canvas>
+        </div>
+        
+        <footer class="footer">
+            <div class="pixel-decoration small"></div>
+            <p>MADE BY AVB <span class="heart">❤️</span> | <a href="https://twitter.com/avbnear" target="_blank">FOLLOW @AVBNEAR</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

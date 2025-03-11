@@ -13,3 +13,7 @@
 - name: publish
   object_id: "0xa42979eb4f7fdef7f95226f76bc191f0f21eae012faa2f8381b49c7a1ee3f71f"
   path: ./publish
+# Add our new projects
+- name: sui-says
+  object_id: "0xc8d11ee6353b61042e88a5c8fbd5d72f76f4c7aee5637c15d451903130a0e3b2"  # Replace with actual object ID after creation
+  path: ./paint-app
